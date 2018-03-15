@@ -1,3 +1,7 @@
 #!/bin/bash
 
-echo "Successfully deployed" > /tmp/rpc-component-2
+set -xeu
+
+echo "Deploying rpc-component-2 ..."
+
+echo "Successfully deployed rpc-component-2" > /tmp/rpc-component-2
