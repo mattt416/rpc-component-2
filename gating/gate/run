@@ -1,0 +1,23 @@
+#!/bin/bash
+
+## Shell Opts ----------------------------------------------------------------
+
+set -eux
+set -o pipefail
+
+## Display environment
+echo "+-------------------- ENV VARS --------------------+"
+env
+echo "+-------------------- ENV VARS --------------------+"
+
+## Vars ----------------------------------------------------------------------
+
+export DEPLOY_AIO="true"
+
+## Main ----------------------------------------------------------------------
+
+echo "rpc-component-2 at SHA $(git rev-parse HEAD)"
+echo "rpc-component-2 gate tests running..."
+sleep 1
+echo "rpc-component-2 gate tests completed."
+
