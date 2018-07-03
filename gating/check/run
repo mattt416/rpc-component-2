@@ -2,6 +2,11 @@
 
 set -xeu
 
+## Display environment
+echo "+-------------------- ENV VARS --------------------+"
+env
+echo "+-------------------- ENV VARS --------------------+"
+
 echo "Deploying rpc-component-2 ..."
 
 echo "Successfully deployed rpc-component-2" > /tmp/rpc-component-2
